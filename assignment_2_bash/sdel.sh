@@ -24,7 +24,7 @@ cd ~/TRASH
 
 for filee in $(ls)
 do
-  if [ $(($(($(date +%s)/3600 - $(date -r $filee +%s)/3600)) > 46)) == 1 ]
+  if [ $(($(($(date +%s)/3600 - $(date -r $filee +%s)/3600)) > 48)) == 1 ]
   then
 	rm $filee
   else
